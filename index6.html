@@ -3,28 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- using cdn in jquery -->
+    <title>Image FadeIn and fadeOut in Jquery</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>Document</title>
-    <style>
-        body{
-            background-color: black;
-            color: white;
-        }
-    </style>
 </head>
-<body bgcolor="black">
-    <!-- Jquery -->
- <h1>Welcome to cybrom</h1>
- <button>Click!</button>
-    <!-- <!-- using file jquery -->
- <!-- <script src="jquery.js"></script> -->
+<body>
+    <button id="fadeIn">FadeIn</button>
+    <button id="fadeOut">FadeOut</button>
+    <br>
+    <img src="https://p16-sg.tiktokcdn.com/aweme/720x720/tiktok-obj/1664480656028673.jpeg" alt="" id="img">
+   
     <script>
         $(document).ready(function(){
-            $("button").click(function(){
-                $("h1").hide(3000);
-            })
-        })
+            $("#fadeIn").click(function(){
+                $("#img").fadeIn(1000);
+            });
+            $("#fadeOut").click(function(){
+                $("#img").fadeOut(1000);
+            });
+        });
     </script>
 </body>
 </html>

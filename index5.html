@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation using Jquery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        body{
+            background-color: black;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button id="animate">Show/Hide</button>
+
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quod aperiam molestiae autem eius fugiat aut, quibusdam et ratione nisi, doloremque ullam ipsa assumenda saepe, aspernatur hic perspiciatis deserunt. Ipsam.
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("#animate").click(function(){
+                $(".box").slideToggle(1000);
+            });
+        });
+        // $(document).ready(function(){
+        //     $("#animate").click(function(){
+        //         $(".box").toggle(1000);
+        //     });
+        // });
+        // $(document).ready(function(){
+        //     $("#animate").click(function(){
+        //         $(".box").slideUp(1000);
+        //     });
+        // });
+        // $(document).ready(function(){
+        //     $("#animate").click(function(){
+        //         $(".box").slideDown(1000);
+        //     });
+        // });
+    </script>
+</body>
+</html>

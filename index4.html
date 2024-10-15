@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Blur and Focus</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        input{
+            width: 400px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Enter your name" > <br>
+    <input type="text" placeholder="Enter your email"> <br>
+    <input type="text" placeholder="Enter your phone number"> <br>
+    <input type="text" placeholder="Enter your address"> <br>
+    <input type="text" placeholder="Enter your city"> <br>
+    <input type="text" placeholder="Enter your state"> <br>
+    <input type="text" placeholder="Enter your zip code"> <br>
+    <input type="text" placeholder="Enter your country">
+
+    <script>
+        $(document).ready(function(){
+            $("input").focus(function(){
+                $(this).css("background-color", "wheat");
+            });
+            $("input").blur(function(){
+                $(this).css("background-color", "white");
+            });
+        });
+    </script>
+</body>
+</html>
