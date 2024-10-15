@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- using cdn in jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Element selector and this keyword</title>
+    <style>
+        p{
+            font-size: 32px;
+            color: blue;
+            filter: drop-shadow(10px 10px 10px black);
+        }
+    </style>
+</head>
+
+
+<body >
+<p>India is a country in South Asia.</p>
+<p>Delhi is the capital of India.</p>
+<p>Bhopal is the capital of Madhya Pradesh.</p>
+<p>Mumbai is the financial capital of India.</p>
+<p>Kolkata is the cultural capital of India.</p>
+<p>Hyderabad is the city of Nizams.</p>
+<p>Ahmedabad is the textile capital of India.</p>
+<p>Surat is the diamond capital of India.</p>
+<p>Vadodara is the education capital of India.</p>
+<p>Pune is the IT capital of India.</p>
+<p>Jaipur is the city of palaces.</p>
+<p>Udaipur is the city of lakes.</p>
+<p>Jodhpur is the city of fort.</p>
+<p>Bikaner is the city of camels.</p>
+<p>Jaisalmer is the city of golden sand.</p>
+
+
+
+
+    <script>
+        $(document).ready(function(){
+            $("p").click(function(){
+                $(this).hide(1000);
+            })
+        })
+    </script>
+</body>
+</html>
